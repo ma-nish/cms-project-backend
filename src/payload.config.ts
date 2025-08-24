@@ -48,4 +48,5 @@ export default buildConfig({
     payloadCloudPlugin(),
     // storage-adapter-placeholder
   ],
+  cors: ['https://cms-project-backend-rho.vercel.app']
 })

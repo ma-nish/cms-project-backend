@@ -155,7 +155,7 @@ export interface User {
  */
 export interface Media {
   id: string;
-  alt: string;
+  alt?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -207,7 +207,7 @@ export interface Page {
         | {
             headline: string;
             subtext?: string | null;
-            backgroundImage: string | Media;
+            backgroundImage?: (string | null) | Media;
             ctaButton: {
               label: string;
               url: string;
@@ -285,7 +285,7 @@ export interface Product {
     };
     [k: string]: unknown;
   } | null;
-  productImage: string | Media;
+  productImage?: (string | null) | Media;
   updatedAt: string;
   createdAt: string;
 }

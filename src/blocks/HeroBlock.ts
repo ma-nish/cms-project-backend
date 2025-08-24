@@ -9,7 +9,7 @@ export const HeroBlock: Block = {
   fields: [
     { name: 'headline', type: 'text', required: true, localized: true },
     { name: 'subtext', type: 'text', localized: true },
-    { name: 'backgroundImage', type: 'upload', relationTo: 'media', required: true },
+    { name: 'backgroundImage', type: 'upload', relationTo: 'media'},
     {
       name: 'ctaButton',
       type: 'group',
