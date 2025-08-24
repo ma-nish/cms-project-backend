@@ -31,6 +31,7 @@ export const Products: CollectionConfig = {
       name: 'productImage',
       type: 'upload',
       relationTo: 'media',
+      required: true,
     },
   ],
 }
